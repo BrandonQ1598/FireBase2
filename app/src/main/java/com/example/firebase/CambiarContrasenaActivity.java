@@ -55,7 +55,7 @@ public class CambiarContrasenaActivity extends AppCompatActivity {
                     return;
                 }
 
-                if (contraseña1.equals(contraseña2)){
+                if (contraseña1.equals(contraseña2)==true){
                     FirebaseUser user=mAuth.getCurrentUser();
                     user.updatePassword(contraseña1).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
@@ -65,6 +65,8 @@ public class CambiarContrasenaActivity extends AppCompatActivity {
                                 progressDialog.show();
                                 Toast.makeText(CambiarContrasenaActivity.this,"Contraseña Actualizada",Toast.LENGTH_LONG).show();
                                 progressDialog.cancel();
+                                passwordn.setText("");
+                                passwordn2.setText("");
                             }else{
                                 Toast.makeText(CambiarContrasenaActivity.this,"Error al actualizar Contraseña",Toast.LENGTH_LONG).show();
                             }
