@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5CB8F2"
+    tools:context=".CambiarContrasenaActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/textpasscambio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="100dp"
+            android:text="Nuevo Password:"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/passwordnuevo"
+            android:layout_height="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="60dp"
+            android:background="#FFFFFF"
+            android:inputType="textPassword" />
+        <TextView
+            android:id="@+id/textconfpasscambio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="100dp"
+            android:text="Confirmar Nuevo Password:"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/confpasswordnuevo"
+            android:layout_height="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="60dp"
+            android:background="#FFFFFF"
+            android:inputType="textPassword" />
+        <Button
+            android:id="@+id/cambiarpassword"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="100dp"
+            android:background="#FF8C00"
+            android:text="Cambiar Password"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/regresarinicon"
+            android:layout_marginTop="20dp"
+            android:text="Regresar"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+    </TableLayout>
+
+
+</LinearLayout>

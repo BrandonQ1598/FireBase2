@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5CB8F2"
+    tools:context=".MainActivity" >
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iconfirebase"
+            android:layout_width="205dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/firebaseicon" />
+        <TextView
+            android:id="@+id/textemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_height="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="60dp"
+            android:background="#FFFFFF"
+            android:inputType="textEmailAddress" />
+        <TextView
+            android:id="@+id/textpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_height="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="60dp"
+            android:background="#FFFFFF"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/iniciarsesion"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="10dp"
+            android:text="Iniciar Sesión"
+            android:textColor="#FFFFFF"
+            android:background="#FF8C00"
+            />
+        <TextView
+            android:id="@+id/olvidastecontraseña"
+            android:text="¿Olvidaste tu contraseña?"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/registrar"
+            android:text="Áun no estas registrado? Hazlo Ahora!"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+    </TableLayout>
+
+
+</LinearLayout>
